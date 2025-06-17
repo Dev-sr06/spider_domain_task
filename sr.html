@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_game_challenge</title>
+
+    <link rel="stylesheet" href="sr.css"> 
+</head>
+<body>
+
+    <div class="Container">
+
+        <h1>Connect Four Challenge</h1>
+
+        <div class="gameinfo">
+            
+            <div  class="red_p_status">
+                <span>Player 1 (Red)</span>
+                <span class="red_P_timer">0:00</span>
+            </div>
+
+            <div class="yellow_p_status">
+                <span>Player 2 (Yellow)</span>
+                <span id="yellow_p_timer">0:00</span>
+            </div>
+
+        </div>
+
+        <div class="game_board">
+
+
+        </div>
+
+        <p  class="game_message">Click 'Start Game' to begin!</p>
+
+
+        <div class="game-controls">
+            <button class="start_btn">Start Game</button>
+
+            <button class="reset_btn" style="display: none;">Reset Game</button>
+
+        </div>
+    </div>
+
+
+    <div class="blockColumn">
+        <div class="column_content">
+            
+            <button class="column_close_btn" >
+                &times;
+            </button>
+
+            <h3 id="block_column_title">Select any column to block!</h3>
+            <p>Your opponent will not be able to drop disc in the selected column</p>
+            <div class="block_column_btn" >
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="game_over">
+
+        <div class="game_over_content">
+
+            <h3 class="game_over_title">Game Over!</h3>
+            <p class="game_over_message">Winner: Player X!</p>
+
+            <div class="game-controls">
+              
+                <button class="play_again_btn">Play Again</button>
+                <button class="close">Close</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="leaderboard">
+        <h3>Leaderboard</h3>
+
+        <div class="red_P_leaderboard">
+            <span >Player 1 (Red) Wins:</span>
+            <span class="red_P_win" >0</span>
+        </div>
+
+        <div class="yellow_P_leaderboard">
+            <span >Player 2 (Yellow) Wins:</span>
+            <span class="yellow_p_win" >0</span>
+        </div>
+
+        <div class="draw">
+            <span class="label">Draws:</span>
+            <span id="draw" class="value">0</span>
+        </div>
+
+    </div>
+
+    <script src="sr.js"></script>
+    
+</body>
+</html>

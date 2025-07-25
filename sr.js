@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             columnEl.classList.add('column');
             columnEl.dataset.column = c;
-            columnEl.addEventListener('click', handleColumnClick);
+            columnEl.addEventListener('click', ColumnClick);
 
             for (let r = 0; r < rows; r++) {
                 
